@@ -15,7 +15,7 @@ class Waiter
     Meal.all.select.each{|meal| meal.waiter == self}
   end
   
-  def customers
+  def best_tipper
     best_tipped_meal = meals.max do |meal| 
       ((meal_a.tip)/(meal_a.total)) <=> ((meal_b.tip)/(meal_b.total)) 
     end
