@@ -12,7 +12,7 @@ class Waiter
   end
   
   def meals 
-    Meal.select.each{|meal| meal.waitress == self}
+    Meal.select.each{|meal| meal.waiter == self}
   end
   
   def all 
