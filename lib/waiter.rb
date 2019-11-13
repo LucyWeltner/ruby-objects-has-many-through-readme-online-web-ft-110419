@@ -22,7 +22,7 @@ class Waiter
     best_tipped_meal.customer
   end
   
-  def all 
+  def self.all 
     @@all 
   end 
 end
